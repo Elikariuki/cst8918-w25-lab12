@@ -16,7 +16,7 @@ provider "azurerm" {
 # Create a resource group
 resource "azurerm_resource_group" "tfstate_rg" {
   name     = "kari0117-githubactions-rg"
-  location = "eastus"  # Choose your preferred Azure region
+  location = "westus3" # Choose your preferred Azure region
 }
 
 # Create a storage account for Terraform state
