@@ -13,10 +13,12 @@ terraform {
     storage_account_name = "kari0117githubactions"
     container_name       = "tfstate"
     key                  = "prod.app.tfstate"
+    use_oidc             = true
   }
 }
 
 # Configure the Azure Provider
 provider "azurerm" {
   features {}
+  use_oidc = true
 }
