@@ -1,4 +1,7 @@
 terraform {
+
+  required_version = ">=1.1.9, <1.12.0"
+
   # Specify the required providers
   required_providers {
     azurerm = {
@@ -19,4 +22,6 @@ terraform {
 
 provider "azurerm" {
   features {}
+
+use_oidc = true
 }
